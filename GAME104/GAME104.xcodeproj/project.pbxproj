@@ -1068,6 +1068,8 @@
 		5A4562D119DABBD100E218BE /* B0177G00SE01b-go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B0177G00SE01b-go.mp3"; path = "Resources/B0177G00SE01b-go.mp3"; sourceTree = "<group>"; };
 		5A4562D419DAC1E000E218BE /* B0177BGu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = B0177BGu.mp3; path = Resources/B0177BGu.mp3; sourceTree = "<group>"; };
 		5A4562D519DAC1E000E218BE /* B0177G00SE02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = B0177G00SE02.mp3; path = Resources/B0177G00SE02.mp3; sourceTree = "<group>"; };
+		5A4562D819DAC52C00E218BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5A4562D919DAC53300E218BE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2407,6 +2409,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 5A455DE419DAAEDF00E218BE;
 			productRefGroup = 5A455DEE19DAAEDF00E218BE /* Products */;
@@ -2796,6 +2800,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5A4562B419DAB60900E218BE /* en */,
+				5A4562D819DAC52C00E218BE /* zh-Hans */,
+				5A4562D919DAC53300E218BE /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			path = Resources;

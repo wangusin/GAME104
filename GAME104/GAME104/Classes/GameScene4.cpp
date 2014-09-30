@@ -74,7 +74,8 @@ bool GameScene4::init()
     SimpleAudioEngine::sharedEngine()->preloadEffect(G4_RESETING_SOUND);
 
     
-    GameLanguageType languageType = (ShareData::getInstance())->getLanguageOfScene(4);
+    CCUserDefault *dataRecord = CCUserDefault::sharedUserDefault();
+    int languageType = dataRecord->getIntegerForKey("Record_Language");
     
     const char* introduceOS = G4_INTRODUCE;
     CCSpriteFrame* logoFrame;
@@ -169,7 +170,7 @@ void GameScene4::onEnterTransitionDidFinish()
 {
     box->check(true);
 //    gameOpenNode->opening(FOURTH_GAME_LOGO);
-    gameOpenIsEnd();
+    scheduleOnce(schedule_selector(GameScene4::gameOpenIsEnd), 2.0f);
 }
 
 void GameScene4::ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent)

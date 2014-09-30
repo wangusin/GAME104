@@ -48,7 +48,7 @@ public:
     // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
     virtual bool init();
     
-    static cocos2d::CCNode* node(GameLanguageType language, int gameIndex);
+    static cocos2d::CCNode* node(int language, int gameIndex);
 
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(GameOperation, create);
     

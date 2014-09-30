@@ -27,7 +27,7 @@ GameOperation::~GameOperation()
     readyGoHasPlayedCallBack = NULL;
 }
 
-CCNode* GameOperation::node(GameLanguageType language, int gameIndex)
+CCNode* GameOperation::node(int language, int gameIndex)
 {
     CCNode* thisNode = CCNode::create();
     
