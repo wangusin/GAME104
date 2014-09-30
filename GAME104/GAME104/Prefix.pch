@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'GAME104' target in the 'GAME104' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
