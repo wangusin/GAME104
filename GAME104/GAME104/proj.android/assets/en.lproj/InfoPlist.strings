@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  100Game
+ 
+*/
+
+"CFBundleDisplayName" = "Flower plucking";
+"CFBundleName" = "Flower plucking";
+"LanguageInit" = "2";

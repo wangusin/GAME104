@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  100Game
+ 
+*/
+
+"CFBundleDisplayName" = "小花连连看";
+"CFBundleName" = "小花连连看";
+"LanguageInit" = "1";
