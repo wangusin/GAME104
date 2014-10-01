@@ -64,6 +64,8 @@ private:
     SEL_CallFunc callbackFunc;
     
     static const int nodeNumber = 1683;
+    
+    CCSprite* littlePullRope;
 };
 
 class G4PictureMatchingLoader:public cocos2d::extension::CCLayerLoader

@@ -6,7 +6,7 @@ USING_NS_CC;
 USING_NS_CC_EXT;
 
 
-G4PictureMatching::G4PictureMatching():mAnimationManager(NULL), scoreFont(NULL), logo(NULL)
+G4PictureMatching::G4PictureMatching():mAnimationManager(NULL), scoreFont(NULL), logo(NULL), littlePullRope(NULL)
 {
     target = NULL;
     callbackFunc = NULL;
@@ -19,6 +19,7 @@ G4PictureMatching::~G4PictureMatching()
     
     CC_SAFE_RELEASE_NULL(scoreFont);
     CC_SAFE_RELEASE_NULL(logo);
+    CC_SAFE_RELEASE_NULL(littlePullRope);
     
     target = NULL;
     callbackFunc = NULL;
@@ -39,6 +40,8 @@ CCNode* G4PictureMatching::node()
         thisNode->addChild(g4PictureMatchingNode);
     }
     
+    g4PictureMatchingNode->littlePullRope->setVisible(false);
+    
     reader->release();
     
     return thisNode;
@@ -58,9 +61,11 @@ bool G4PictureMatching::init()
 
 bool G4PictureMatching::onAssignCCBMemberVariable(CCObject* pTarget, const char* pMemberVariableName, CCNode* pNode)
 {
-    
+    CCLOG("pMemberVariableName = %s", pMemberVariableName);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "scoreFont", CCLabelBMFont*, this->scoreFont);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "logo", CCSprite*, this->logo);
+    
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "littlePullRope", CCSprite*, this->littlePullRope);
     
     return true;
 }

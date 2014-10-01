@@ -145,14 +145,20 @@ bool GameScene4::init()
     this->addChild(gameEndNode, 30);
     
     //遊戲按鈕
-    CCSprite* gameButton = CCSprite::create();
-    CCRect gameZoneSize = CCRectMake(0, 0, 65, 155);
-    gameButton->setTextureRect(gameZoneSize);
-    gameButton->setOpacity(0);
+//    CCSprite* gameButton = CCSprite::create();
+//    CCRect gameZoneSize = CCRectMake(0, 0, 65, 155);
+//    gameButton->setTextureRect(gameZoneSize);
+//    gameButton->setOpacity(0);
+//    
+//    CCMenuItemSprite* spriteItemGame = CCMenuItemSprite::create(gameButton, gameButton, this, menu_selector(GameScene4::goBackStoryCallBack));
+//    spriteItemGame->setPosition(ccp(0, 611));
+//    spriteItemGame->setAnchorPoint(ccp(0.0f, 0));
+    
+    CCSprite* gameButton = CCSprite::create("exit_btn.png");
     
     CCMenuItemSprite* spriteItemGame = CCMenuItemSprite::create(gameButton, gameButton, this, menu_selector(GameScene4::goBackStoryCallBack));
-    spriteItemGame->setPosition(ccp(0, 611));
-    spriteItemGame->setAnchorPoint(ccp(0.0f, 0));
+    spriteItemGame->setPosition(ccp(0, 768));
+    spriteItemGame->setAnchorPoint(ccp(0.0f, 1));
     
     allMenu = CCMenu::create(spriteItemGame, NULL);
     allMenu->setPosition(ccp(0, 0));
